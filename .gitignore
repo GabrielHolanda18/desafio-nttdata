@@ -1,0 +1,21 @@
+### Build ###
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Eclipse ###
+.classpath
+.project
+.settings/
+
+### macOS ###
+.DS_Store
+
+### Logs ###
+*.log
