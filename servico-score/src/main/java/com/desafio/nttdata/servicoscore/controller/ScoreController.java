@@ -1,5 +1,6 @@
 package com.desafio.nttdata.servicoscore.controller;
 
+import com.desafio.nttdata.servicoscore.dto.ScoreResponseDTO;
 import com.desafio.nttdata.servicoscore.service.ScoreService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -19,6 +20,13 @@ public class ScoreController {
 
     public ScoreController(ScoreService scoreService) {
         this.scoreService = scoreService;
+    }
+
+    @PostMapping
+    @Operation(summary = "Calcula o score de credito de um cliente PF ou PJ")
+    public ResponseEntity<ScoreResponseDTO> calcularScore(@Valid @RequestBody ScoreRequestDTO request) {
+        ScoreResponseDTO  response = scoreService.calcularScore(request);
+        return ResponseEntity.ok(response);
     }
 
 }
