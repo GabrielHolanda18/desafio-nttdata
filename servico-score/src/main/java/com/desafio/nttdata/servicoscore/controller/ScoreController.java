@@ -1,5 +1,6 @@
 package com.desafio.nttdata.servicoscore.controller;
 
+import com.desafio.nttdata.servicoscore.dto.ScoreRequestDTO;
 import com.desafio.nttdata.servicoscore.dto.ScoreResponseDTO;
 import com.desafio.nttdata.servicoscore.service.ScoreService;
 import io.swagger.v3.oas.annotations.Operation;
