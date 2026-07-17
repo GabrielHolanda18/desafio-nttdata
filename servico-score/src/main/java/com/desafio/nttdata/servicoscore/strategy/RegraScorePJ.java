@@ -4,12 +4,11 @@ import com.desafio.nttdata.servicoscore.dto.ScoreRequestDTO;
 import com.desafio.nttdata.servicoscore.dto.TipoCliente;
 import org.springframework.stereotype.Component;
 
-/**
- * Regra de score para Pessoa Juridica.
- *
- * Formula simplificada (fins didaticos):
- * - Faturamento anual contribui ate 700 pontos (faturamento / 10000, limitado a 700)
- * - Tempo de mercado contribui ate 300 pontos (anos * 30, limitado a 300)
+/*
+ * Regra de score para Pessoa Jurídica.
+ * IMPORTANTE: Formula simplificada usada apenas de exemplo nesse projeto
+ * - Faturamento anual contribui até 700 pontos (faturamento / 10000, limitado a 700)
+ * - Tempo de mercado contribui até 300 pontos (anos * 30, limitado a 300)
  */
 
 @Component

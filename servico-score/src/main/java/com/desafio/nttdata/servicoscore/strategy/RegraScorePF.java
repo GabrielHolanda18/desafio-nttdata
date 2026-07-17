@@ -4,13 +4,12 @@ import com.desafio.nttdata.servicoscore.dto.ScoreRequestDTO;
 import com.desafio.nttdata.servicoscore.dto.TipoCliente;
 import org.springframework.stereotype.Component;
 
-/**
+/*
  * Regra de score para Pessoa Fisica.
- *
- * Formula simplificada (fins didaticos):
- * - Renda mensal contribui ate 600 pontos (renda / 10, limitado a 600)
- * - Idade contribui ate 400 pontos (idade * 8, limitado a 400),
- *   pois consideramos que clientes mais maduros tem historico mais estavel
+ * IMPORTANTE: Formula simplificada usada apenas de exemplo nesse projeto
+ * - Renda mensal contribui até 600 pontos (renda / 10, limitado a 600)
+ * - Idade contribui até 400 pontos (idade * 8, limitado a 400),
+ *   pois consideramos que clientes mais maduros tem histórico mais estável
  */
 
 @Component

@@ -10,6 +10,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ScoreRequestDTO {
 
+    /*
+    *   A validacao de qual campo é obrigatorio para PF (idade, rendaMensal) e
+    *   PJ (faturamentoAnual,tempoMercadoAnos) fica a cargo da Strategy correspondente, nao do DTO.
+     */
     @NotNull(message = "O tipo de cliente (PF ou PJ) e obrigatorio")
     private TipoCliente tipoCliente;
 
