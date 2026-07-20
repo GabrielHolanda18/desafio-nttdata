@@ -1,6 +1,7 @@
 package com.desafio.nttdata.servicoemprestimo.entity;
 
 
+import com.desafio.nttdata.servicoemprestimo.dto.TipoCliente;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
