@@ -14,9 +14,9 @@ public abstract class ValidadorBase implements Validador {
 
     @Override
     public final void validar(EmprestimoRequestDTO request) {
-        doValidar(request);
+        doValidar(request); // executa a validação dele mesmo
         if (proximo != null) {
-            proximo.validar(request);
+            proximo.validar(request); // chama o próximo, que faz o mesmo
         }
     }
 
