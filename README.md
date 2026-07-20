@@ -111,6 +111,7 @@ desse desafio. Foi a primeira vez que:
   entre serviços, sem escrever nenhuma linha de `RestTemplate`/`WebClient` na mão
 - Testei e documentei uma API via Swagger direto no navegador, sem precisar de
   Postman
+
 Além disso:
  
 - Como o Spring gerencia Beans e injeção de dependência automaticamente a
