@@ -33,6 +33,15 @@ public class EmprestimoFacade {
                 .collect(Collectors.toMap(RegraAprovacao::getTipoSuportado, Function.identity()));
     }
 
+    public List<EmprestimoResponseDTO> listarTodos() {
+        return emprestimoRepository.findAll().stream()
+                .map(e -> new EmprestimoResponseDTO(
+                        e.getDocumento(), e.getTipoCliente(), e.getValorSolicitado(),
+                        e.getScore(), e.getClassificacaoScore(), e.isAprovado(),
+                        e.getMotivo(), e.getValorAprovado()))
+                .toList();
+    }
+
     public EmprestimoResponseDTO processar(EmprestimoRequestDTO request) {
 
         // documento -> dados por tipo -> valor
